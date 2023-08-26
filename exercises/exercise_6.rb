@@ -33,7 +33,9 @@ end
 @store2.employees.create(first_name: "Klark", last_name: "Lo", hourly_rate: 65)
 @store1.employees.create(first_name: "Klark", last_name: "Lo", hourly_rate: 60)
 
-
+puts "Store 1 has #{@store1.employees.count} employees"
+puts "Store 2 has #{@store2.employees.count} employees"
+puts "Total number of employees at all stores: #{Employee.count}"
 # Why do I keep getting issues if I use a different store other than 1 and 2?
 # NOTES:
 # Since ApplicationRecord inherits from ActiveRecord::Base, your application's models will have a number of helpful methods available to them. For example, you can use the ActiveRecord::Base.table_name = method to customize the table name that should be used. 
