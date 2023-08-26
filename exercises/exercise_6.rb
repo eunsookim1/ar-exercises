@@ -32,8 +32,9 @@ end
 @store2.employees.create(first_name: "Bob", last_name: "Smith", hourly_rate: 50)
 @store2.employees.create(first_name: "Klark", last_name: "Lo", hourly_rate: 65)
 @store1.employees.create(first_name: "Klark", last_name: "Lo", hourly_rate: 60)
-@store6.employees.create(first_name: "Aubrey", last_name: "Kim", hourly_rate: 65)
 
+
+# Why do I keep getting issues if I use a different store other than 1 and 2?
 # NOTES:
 # Since ApplicationRecord inherits from ActiveRecord::Base, your application's models will have a number of helpful methods available to them. For example, you can use the ActiveRecord::Base.table_name = method to customize the table name that should be used. 
 
